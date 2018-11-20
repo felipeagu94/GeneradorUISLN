@@ -10,7 +10,11 @@
 
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
+<<<<<<< HEAD
       <HintPath>..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+=======
+      <HintPath>..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+>>>>>>> controlModels
     </Reference>
   </ItemGroup>
 

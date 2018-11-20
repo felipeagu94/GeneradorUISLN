@@ -16,45 +16,31 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {
-            string labelHtml = "", htmlCode = "";
             string html = "", rcHtml = "", cbHtml = "";
 
-            labelHtml = $"<label>{label}</label>";
-            htmlCode = $"<input type=\"{type}\" name=\"{name}\" ";
-
-            switch (type)
             {
                 case "button":
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' value=\"{label}\" />");
-                    break;
                 case "submit":
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' value=\"{label}\" />");
                     break;
                 case "image":
-                    htmlCode = String.Concat(htmlCode, $" src=\"{src}\" />");
                     break;
                 case "radio":
                     foreach (var item in options)
                     {
-                        rcHtml = String.Concat(rcHtml, "<div class='radio-inline'>", htmlCode, $" value=\"{item.value}\" /> {item.name} </div>");
                     }
 
-                    htmlCode = String.Concat("<div class='form-control' >", rcHtml, "</div>");
                     break;
                 case "checkbox":
                     foreach (var item in options)
                     {
-                        cbHtml = String.Concat(cbHtml, "<div class='checkbox-inline'>", htmlCode, $" value=\"{item.value}\" /> {item.name} </div>");
                     }
 
                     htmlCode = String.Concat("<div>", cbHtml, "</div>");
                     break;
                 default:
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' placeholder=\"{placeHolder}\" v-model=\"{name}\" />");
                     break;
             }
 
-            html = String.Concat(html, $"<div>", labelHtml, htmlCode, "</div>");
 
             return html;
         }

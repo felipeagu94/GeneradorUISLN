@@ -15,7 +15,6 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {
-            String codigoHTML = $"id='{name}' {GenerarEstilo()} {events}";
             codigoHTML = GenerarTipo(codigoHTML);
 
             return codigoHTML;
@@ -30,11 +29,7 @@ namespace Modelos
                 case "link":
                     codigoHTML = $"<a {codigoHTML}>{value}</a>";
                     break;
-                case "input":
-                    codigoHTML = $"<input type='submit' {codigoHTML} value='{value}'/>";
-                    break;
                 default:
-                    codigoHTML = $"<button {codigoHTML}>{value}</button>";
                     break;
             }
             return codigoHTML;
@@ -48,16 +43,12 @@ namespace Modelos
             switch (style.ToLower())
             {
                 case "ayuda":
-                    claseEstilo = "class='btn btn-info'";
                     break;
                 case "guardar":
-                    claseEstilo = "class='btn btn-success'";
                     break;
                 case "regresar":
-                    claseEstilo = "class='btn btn-default'";
                     break;
                 case "cancelar":
-                    claseEstilo = "class='btn btn-danger'";
                     break;
                 case "link":
                     claseEstilo = "class='btn btn-link'";
