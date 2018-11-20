@@ -10,3 +10,5 @@ C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfo.
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CopyComplete
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.dll
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.pdb
+C:\Software\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Software\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
