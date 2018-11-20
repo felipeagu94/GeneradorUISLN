@@ -10,3 +10,17 @@ C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfo.
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CopyComplete
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.dll
 C:\Software\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Fachada.deps.json
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Fachada.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Fachada.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Modelos.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Modelos.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.csprojAssemblyReference.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CoreCompileInputs.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfoInputs.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfo.cs
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CopyComplete
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN\Fachada\obj\Debug\netcoreapp2.1\Fachada.pdb

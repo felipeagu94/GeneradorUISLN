@@ -15,7 +15,7 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {
-            String codigoHTML = $"id='{name}' {GenerarEstilo()} {events}";
+            String codigoHTML = $"{GenerarEstilo()} {events}";
             codigoHTML = GenerarTipo(codigoHTML);
 
             return codigoHTML;
@@ -30,11 +30,12 @@ namespace Modelos
                 case "link":
                     codigoHTML = $"<a {codigoHTML}>{value}</a>";
                     break;
-                case "input":
-                    codigoHTML = $"<input type='submit' {codigoHTML} value='{value}'/>";
-                    break;
+                //case "input":
+                //    codigoHTML = $"<input type='submit' {codigoHTML} value='{value}'/>";
+                //    break;
                 default:
-                    codigoHTML = $"<button {codigoHTML}>{value}</button>";
+                    codigoHTML = $"<div id=\"buttoncontrol\"><v-app id=\"inspire\"><v-btn {codigoHTML}>{value}</v-btn></v-app></div>" +
+                        "<script type=\"text/javascript\">new Vue({el:'#buttoncontrol'});</script>";
                     break;
             }
             return codigoHTML;
@@ -48,16 +49,16 @@ namespace Modelos
             switch (style.ToLower())
             {
                 case "ayuda":
-                    claseEstilo = "class='btn btn-info'";
+                    claseEstilo = "color=\"info\"";
                     break;
                 case "guardar":
-                    claseEstilo = "class='btn btn-success'";
+                    claseEstilo = "color=\"success\"";
                     break;
                 case "regresar":
-                    claseEstilo = "class='btn btn-default'";
+                    claseEstilo = "color=\"info\"";
                     break;
                 case "cancelar":
-                    claseEstilo = "class='btn btn-danger'";
+                    claseEstilo = "color=\"warning\"";
                     break;
                 case "link":
                     claseEstilo = "class='btn btn-link'";
@@ -68,5 +69,6 @@ namespace Modelos
             }
             return claseEstilo;
         }
+
     }
 }

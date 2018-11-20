@@ -16,47 +16,58 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {
-            string labelHtml = "", htmlCode = "";
+            string htmlCode = "", scriptDate="";
             string html = "", rcHtml = "", cbHtml = "";
 
-            labelHtml = $"<label>{label}</label>";
-            htmlCode = $"<input type=\"{type}\" name=\"{name}\" ";
-
-            switch (type)
+            switch (type.ToLower())
             {
                 case "button":
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' value=\"{label}\" />");
-                    break;
                 case "submit":
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' value=\"{label}\" />");
+                    htmlCode = $"<v-btn color=\"info\">{label}</v-btn>";
                     break;
                 case "image":
-                    htmlCode = String.Concat(htmlCode, $" src=\"{src}\" />");
+                    htmlCode = $"<v-layout row wrap><v-flex><v-img :src=\"`{src}`\"></v-img></v-flex></v-layout>";
                     break;
                 case "radio":
                     foreach (var item in options)
                     {
-                        rcHtml = String.Concat(rcHtml, "<div class='radio-inline'>", htmlCode, $" value=\"{item.value}\" /> {item.name} </div>");
+                        rcHtml = String.Concat(rcHtml, $"<v-radio value=\"{item.value}\" label=\"{item.name}\"></v-radio>");
                     }
 
-                    htmlCode = String.Concat("<div class='form-control' >", rcHtml, "</div>");
+                    htmlCode = String.Concat($"<v-radio-group label=\"{label}\">", rcHtml, "</v-radio-group>");
                     break;
                 case "checkbox":
                     foreach (var item in options)
                     {
-                        cbHtml = String.Concat(cbHtml, "<div class='checkbox-inline'>", htmlCode, $" value=\"{item.value}\" /> {item.name} </div>");
+                        cbHtml = String.Concat(cbHtml, $"<v-checkbox label=\"{item.name}\"></v-checkbox>");
                     }
 
                     htmlCode = String.Concat("<div>", cbHtml, "</div>");
                     break;
+                case "date":
+                    htmlCode ="<v-layout row wrap><v-flex xs12 sm6 md4 ><v-menu :close-on-content-click=\"false\" v-model = \"datemenu\" " +
+                        ":nudge-right = \"40\" lazy transition = \"scale-transition\" offset-y full-width min-width = \"290px\" >" +
+                        $"<v-text-field slot = \"activator\" v-model = \"date\" label = \"{label}\" prepend-icon = \"event\" readonly> " + 
+                        "</v-text-field><v-date-picker v-model = \"date\" @input = \"datemenu = false\"></v-date-picker></v-menu>" +
+                        "</v-flex><v-spacer></v-spacer></v- layout>";
+                    break;
                 default:
-                    htmlCode = String.Concat(htmlCode, $" class='form-control' placeholder=\"{placeHolder}\" v-model=\"{name}\" />");
+                    htmlCode = $"<v-text-field placeholder=\"{placeHolder}\" label=\"{label}\"></v-text-field>";
                     break;
             }
 
-            html = String.Concat(html, $"<div>", labelHtml, htmlCode, "</div>");
+            scriptDate = dateScript();
+
+            html = String.Concat(html, $"<div id=\"inputcontrol\"><v-app id=\"inspire\">", htmlCode, "</v-app></div>", scriptDate);
+
 
             return html;
+        }
+
+        private string dateScript()
+        {
+            string script = "<script type=\"text/javascript\">new Vue({el:'#inputcontrol', data:() => ({date: new Date().toISOString().substr(0,10), datemenu:false})});</script>";
+            return script;
         }
     }
 

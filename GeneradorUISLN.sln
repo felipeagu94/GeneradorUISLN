@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneradorInput", "GeneradorInput\GeneradorInput.csproj", "{C10C0269-2F43-4B90-9892-C6E3E16690F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneradorInput", "GeneradorInput\GeneradorInput.csproj", "{C10C0269-2F43-4B90-9892-C6E3E16690F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneradorButton", "GeneradorButton\GeneradorButton.csproj", "{ED96F5FB-281B-4E58-ABE0-26EC7F121024}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneradorButton", "GeneradorButton\GeneradorButton.csproj", "{ED96F5FB-281B-4E58-ABE0-26EC7F121024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneradorSelect", "GeneradorSelect\GeneradorSelect.csproj", "{86B87531-EB53-453D-A03D-015EBB28C861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneradorSelect", "GeneradorSelect\GeneradorSelect.csproj", "{86B87531-EB53-453D-A03D-015EBB28C861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{11AFA295-DD1C-43D4-A9EA-8D15360D95B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modelos", "Modelos\Modelos.csproj", "{11AFA295-DD1C-43D4-A9EA-8D15360D95B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fachada", "Fachada\Fachada.csproj", "{CB2F9E02-3AEA-4493-9B6A-78866C95B88A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fachada", "Fachada\Fachada.csproj", "{CB2F9E02-3AEA-4493-9B6A-78866C95B88A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
