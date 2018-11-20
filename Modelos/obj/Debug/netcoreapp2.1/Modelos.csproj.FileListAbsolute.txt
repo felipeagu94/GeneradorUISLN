@@ -6,3 +6,4 @@ C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfoI
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfo.cs
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.dll
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.pdb
+C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.csprojAssemblyReference.cache
