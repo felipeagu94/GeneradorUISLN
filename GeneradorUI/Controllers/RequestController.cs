@@ -22,7 +22,6 @@ namespace GeneradorUI.Controllers
         {
             string response = await _fachadaUI.GenerarHTML(defaultModel);
             response += await _fachadaUI.GenerarScript(defaultModel);
-            response += await _fachadaUI.GenerarCSS();
 
             return response;
         }

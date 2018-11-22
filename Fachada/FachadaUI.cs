@@ -23,18 +23,19 @@ namespace Fachada
             foreach (var input in model.input)
             {
                 json = JsonConvert.SerializeObject(input);
-                response = $"{response} <div class='{claseCols}'>{await HacerPost(json,$"{_urlInput}api/request")}</div>";
+                response = $"{response} <v-flex {claseCols}>{await HacerPost(json,$"{_urlInput}api/request")}</v-flex>";
             }
             foreach (var select in model.select)
             {
                 json = JsonConvert.SerializeObject(select);
-                response = $"{response} <div class='{claseCols}'>{await HacerPost(json, $"{_urlSelect}api/request")}</div>";
+                response = $"{response} <v-flex {claseCols}>{await HacerPost(json, $"{_urlSelect}api/request")}</v-flex>";
             }
             foreach (var button in model.button)
             {
-                response = $"{response} <div class='{claseCols}'>{await HacerPost(json, $"{_urlButton}api/request")}</div>";
+                response = $"{response} <v-flex {claseCols}>{await HacerPost(json, $"{_urlButton}api/request")}</v-flex>";
             }
-            response = $"<div id='{model.formId}'>{response}</div>";
+            response = $"<div id='{model.formId}'><v-app><v-layout row wrap>{response}</v-layout></v-app></div>";
+
 
             return response;
         }
@@ -48,8 +49,8 @@ namespace Fachada
         {
             string response = "var demo = new Vue({";
             response = $"{response}el: '#{model.formId}',";
-            // variables del objecto Vue
-            response += "data: {";
+            // variables del objeto Vue
+            response += "data: {datemenu:false, items:[],";
             response = await GenerarDatos(model, response);
             response += "}, methods: {";
             // envio Axios del formulario
@@ -61,6 +62,17 @@ namespace Fachada
 
             response += "}});";
             return response;
+        }
+
+        private async Task<string> GenerarSelectOptions(List<SelectOptions> so)
+        {
+            string selectItems = "";
+            foreach (var item in so)
+            {
+                selectItems += String.Concat("'", item.text, "'");
+            }
+            selectItems = String.Concat("[", selectItems.Replace("''", "','"), "]");
+            return selectItems;
         }
 
         private async Task<string> GenerarDatos(DefaultModel model, string response)
@@ -97,30 +109,23 @@ namespace Fachada
             switch (cols)
             {
                 case "2":
-                    claseCols = "col-md-6 col-sm-6";
+                    claseCols = "xs6";
                     break;
                 case "3":
-                    claseCols = "col-md-4 col-sm-4";
+                    claseCols = "xs4";
                     break;
                 case "4":
-                    claseCols = "col-md-3 col-sm-3";
+                    claseCols = "xs3";
                     break;
                 case "6":
-                    claseCols = "col-md-2 col-sm-2";
+                    claseCols = "xs2";
                     break;
                 default:
-                    claseCols = "col-md-12 col-sm-12";
+                    claseCols = "xs12";
                     break;
             }
 
             return claseCols;
-        }
-
-        public async Task<string> GenerarCSS()
-        {
-            string cssCode = "<style>div.form-control {border:0; box-shadow:none;} label{padding-top:5px;} button{margin-top:2%;}</style>";
-
-            return cssCode;
         }
 
         private async Task<String> HacerPost(String json, String url)

@@ -15,7 +15,7 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {
-            String codigoHTML = $"id='{name}' {GenerarEstilo()} {events}";
+            String codigoHTML = $"{GenerarEstilo()} {events}";
             codigoHTML = GenerarTipo(codigoHTML);
 
             return codigoHTML;
@@ -28,13 +28,10 @@ namespace Modelos
             switch (type.ToLower())
             {
                 case "link":
-                    codigoHTML = $"<a {codigoHTML}>{value}</a>";
-                    break;
-                case "input":
-                    codigoHTML = $"<input type='submit' {codigoHTML} value='{value}'/>";
+                    codigoHTML = $"<a {codigoHTML} v-model=\"{name}\" v-on:click=\"{events}\">{value}</a>";
                     break;
                 default:
-                    codigoHTML = $"<button {codigoHTML}>{value}</button>";
+                    codigoHTML = $"<v-btn {codigoHTML} v-model=\"{name}\" v-on:click=\"{events}\">{value}</v-btn>";
                     break;
             }
             return codigoHTML;
@@ -48,25 +45,26 @@ namespace Modelos
             switch (style.ToLower())
             {
                 case "ayuda":
-                    claseEstilo = "class='btn btn-info'";
+                    claseEstilo = "color=\"yellow\"";
                     break;
                 case "guardar":
-                    claseEstilo = "class='btn btn-success'";
+                    claseEstilo = "color=\"success\"";
                     break;
                 case "regresar":
-                    claseEstilo = "class='btn btn-default'";
+                    claseEstilo = "color=\"blue\"";
                     break;
                 case "cancelar":
-                    claseEstilo = "class='btn btn-danger'";
+                    claseEstilo = "color=\"warning\"";
                     break;
                 case "link":
-                    claseEstilo = "class='btn btn-link'";
+                    claseEstilo = "color=\"blue\"";
                     break;
                 default:
-                    claseEstilo = "class='btn'";
+                    claseEstilo = "color=\"blue\"";
                     break;
             }
             return claseEstilo;
         }
+
     }
 }

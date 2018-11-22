@@ -7,3 +7,12 @@ C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfo.
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.dll
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.pdb
 C:\Software\GeneradorUISLN\Modelos\obj\Debug\netcoreapp2.1\Modelos.csprojAssemblyReference.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\bin\Debug\netcoreapp2.1\Modelos.deps.json
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\bin\Debug\netcoreapp2.1\Modelos.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\bin\Debug\netcoreapp2.1\Modelos.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfoInputs.cache
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfo.cs
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.dll
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.csprojAssemblyReference.cache

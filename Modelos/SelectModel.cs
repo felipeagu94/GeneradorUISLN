@@ -8,17 +8,13 @@ namespace Modelos
     public class SelectModel : IGenerate
     {
         public string name { get; set; }
-        public String label { get; set; }
+        public string label { get; set; }
         public List<SelectOptions> options { get; set; }
 
+
         public async Task<string> GenerateHTML()
-        {
-            String codigoHtml = $"<label for='{name}'>{label}</label><select class='selectpicker form-control' data-live-search='true' id='{name}' title='Seleccione una opción' v-model='{name}'>";
-            foreach (var datoActual in options)
-            {
-                codigoHtml = $"{codigoHtml}<option value='{datoActual.value}'>{datoActual.text}</option>";
-            }
-            codigoHtml = $"{codigoHtml}</select>";
+        {            
+            String codigoHtml = $"<v-combobox v-model=\"{name}\" :items=\"items\" label = \"{label}\"></v-combobox>";
             return codigoHtml;
         }
     }
