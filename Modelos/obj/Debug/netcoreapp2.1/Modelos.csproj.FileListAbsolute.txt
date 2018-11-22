@@ -16,3 +16,12 @@ C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.dll
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.pdb
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Modelos\obj\Debug\netcoreapp2.1\Modelos.csprojAssemblyReference.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\bin\Debug\netcoreapp2.1\Modelos.deps.json
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\bin\Debug\netcoreapp2.1\Modelos.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\bin\Debug\netcoreapp2.1\Modelos.pdb
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.csprojAssemblyReference.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.csproj.CoreCompileInputs.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfoInputs.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.AssemblyInfo.cs
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Modelos\obj\Debug\netcoreapp2.1\Modelos.pdb

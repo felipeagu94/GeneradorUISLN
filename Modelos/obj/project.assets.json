@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmorales\\.nuget\\packages\\": {},
+    "C:\\Users\\jagudelo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Modelos\\Modelos.csproj",
+      "projectUniqueName": "C:\\Software\\GeneradorUISLN\\Modelos\\Modelos.csproj",
       "projectName": "Modelos",
-      "projectPath": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Modelos\\Modelos.csproj",
-      "packagesPath": "C:\\Users\\jmorales\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Modelos\\obj\\",
+      "projectPath": "C:\\Software\\GeneradorUISLN\\Modelos\\Modelos.csproj",
+      "packagesPath": "C:\\Users\\jagudelo\\.nuget\\packages\\",
+      "outputPath": "C:\\Software\\GeneradorUISLN\\Modelos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jmorales\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jagudelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

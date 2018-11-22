@@ -23,7 +23,7 @@ namespace Fachada
             foreach (var input in model.input)
             {
                 json = JsonConvert.SerializeObject(input);
-                response = $"{response} <v-flex {claseCols}>{await HacerPost(json,$"{_urlInput}api/request")}</v-flex>";
+                response = $"{response} <v-flex {claseCols}>{await HacerPost(json, $"{_urlInput}api/request")}</v-flex>";
             }
             foreach (var select in model.select)
             {
@@ -32,6 +32,7 @@ namespace Fachada
             }
             foreach (var button in model.button)
             {
+                json = JsonConvert.SerializeObject(button);
                 response = $"{response} <v-flex {claseCols}>{await HacerPost(json, $"{_urlButton}api/request")}</v-flex>";
             }
             response = $"<div id='{model.formId}'><v-app><v-layout row wrap>{response}</v-layout></v-app></div>";
@@ -50,7 +51,8 @@ namespace Fachada
             string response = "var demo = new Vue({";
             response = $"{response}el: '#{model.formId}',";
             // variables del objeto Vue
-            response += "data: {datemenu:false, items:[],";
+            response += "data: {datemenu:false, ";
+            response += $"{ await GenerarItems(model.select)},";
             response = await GenerarDatos(model, response);
             response += "}, methods: {";
             // envio Axios del formulario
@@ -64,15 +66,26 @@ namespace Fachada
             return response;
         }
 
-        private async Task<string> GenerarSelectOptions(List<SelectOptions> so)
+        private async Task<string> GenerarItems(List<SelectModel> selects)
         {
-            string selectItems = "";
-            foreach (var item in so)
+            string response = string.Empty;
+            foreach (var selectModel in selects)
             {
-                selectItems += String.Concat("'", item.text, "'");
+                response += $" {selectModel.name}_items:[ {await GenerarOptions(selectModel)} ],";
             }
-            selectItems = String.Concat("[", selectItems.Replace("''", "','"), "]");
-            return selectItems;
+            return response.TrimEnd(',');
+        }
+
+        private async Task<string> GenerarOptions(SelectModel model)
+        {
+            string response = string.Empty;
+            foreach (var option in model.options)
+            {
+                string bodyOption = $"\"text\": '{option.text}', \"value\": '{option.value}'";
+                response += string.Concat("{ ", bodyOption, " },");
+            }
+
+            return response.TrimEnd(',');
         }
 
         private async Task<string> GenerarDatos(DefaultModel model, string response)
@@ -109,19 +122,19 @@ namespace Fachada
             switch (cols)
             {
                 case "2":
-                    claseCols = "xs6";
+                    claseCols = "ms6 xs6";
                     break;
                 case "3":
-                    claseCols = "xs4";
+                    claseCols = "ms4 xs4";
                     break;
                 case "4":
-                    claseCols = "xs3";
+                    claseCols = "ms3 xs3";
                     break;
                 case "6":
-                    claseCols = "xs2";
+                    claseCols = "ms2 xs2";
                     break;
                 default:
-                    claseCols = "xs12";
+                    claseCols = "ms12 xs12";
                     break;
             }
 

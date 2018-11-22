@@ -14,7 +14,7 @@ namespace Modelos
 
         public async Task<string> GenerateHTML()
         {            
-            String codigoHtml = $"<v-combobox v-model=\"{name}\" :items=\"items\" label = \"{label}\"></v-combobox>";
+            String codigoHtml = $"<v-select v-model=\"{name}\" :items=\"{name}_items\" label = \"{label}\"></v-select>";
             return codigoHtml;
         }
     }

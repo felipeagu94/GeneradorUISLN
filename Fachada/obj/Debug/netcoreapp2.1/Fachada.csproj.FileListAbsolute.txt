@@ -26,3 +26,17 @@ C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Fachada\bin\Debug\netcoreapp2.1
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Fachada\bin\Debug\netcoreapp2.1\Modelos.pdb
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
 C:\Users\jmorales\Desktop\GeneradorUISLN20181121\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CopyComplete
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Fachada.deps.json
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Fachada.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Fachada.pdb
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Modelos.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Modelos.pdb
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.csprojAssemblyReference.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CoreCompileInputs.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfoInputs.cache
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.AssemblyInfo.cs
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.csproj.CopyComplete
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.dll
+C:\Software\GeneradorUISLN-VuetifyBranch\Fachada\obj\Debug\netcoreapp2.1\Fachada.pdb
