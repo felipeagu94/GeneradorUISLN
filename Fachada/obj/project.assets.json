@@ -704,23 +704,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jagudelo\\.nuget\\packages\\": {},
+    "C:\\Users\\jmorales\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Software\\GeneradorUISLN\\Fachada\\Fachada.csproj",
+      "projectUniqueName": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Fachada\\Fachada.csproj",
       "projectName": "Fachada",
-      "projectPath": "C:\\Software\\GeneradorUISLN\\Fachada\\Fachada.csproj",
-      "packagesPath": "C:\\Users\\jagudelo\\.nuget\\packages\\",
-      "outputPath": "C:\\Software\\GeneradorUISLN\\Fachada\\obj\\",
+      "projectPath": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Fachada\\Fachada.csproj",
+      "packagesPath": "C:\\Users\\jmorales\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Fachada\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jagudelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jmorales\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Software\\GeneradorUISLN\\Modelos\\Modelos.csproj": {
-              "projectPath": "C:\\Software\\GeneradorUISLN\\Modelos\\Modelos.csproj"
+            "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Modelos\\Modelos.csproj": {
+              "projectPath": "C:\\Users\\jmorales\\Desktop\\GeneradorUISLN20181121\\Modelos\\Modelos.csproj"
             }
           }
         }

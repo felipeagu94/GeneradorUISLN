@@ -35,7 +35,7 @@ namespace Fachada
                 json = JsonConvert.SerializeObject(button);
                 response = $"{response} <v-flex {claseCols}>{await HacerPost(json, $"{_urlButton}api/request")}</v-flex>";
             }
-            response = $"<div id='{model.formId}'><v-app><v-layout row wrap>{response}</v-layout></v-app></div>";
+            response = $"<div id='{model.formId}'><v-app><v-form><v-container><v-layout row wrap>{response}</v-layout></v-container></v-form></v-app></div>";
 
 
             return response;

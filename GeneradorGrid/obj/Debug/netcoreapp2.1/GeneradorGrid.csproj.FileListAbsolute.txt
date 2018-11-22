@@ -54,3 +54,4 @@ C:\Software\GeneradorUISLN-VuetifyBranch\GeneradorGrid\obj\Debug\netcoreapp2.1\G
 C:\Software\GeneradorUISLN-VuetifyBranch\GeneradorGrid\obj\Debug\netcoreapp2.1\GeneradorGrid.csproj.CopyComplete
 C:\Software\GeneradorUISLN-VuetifyBranch\GeneradorGrid\obj\Debug\netcoreapp2.1\GeneradorGrid.dll
 C:\Software\GeneradorUISLN-VuetifyBranch\GeneradorGrid\obj\Debug\netcoreapp2.1\GeneradorGrid.pdb
+C:\Users\jmorales\Desktop\GeneradorUISLN20181121\GeneradorGrid\obj\Debug\netcoreapp2.1\GeneradorGrid.csprojAssemblyReference.cache
